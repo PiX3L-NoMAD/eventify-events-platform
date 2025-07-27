@@ -80,7 +80,7 @@ export default function EventListPage() {
   }
 
   return (
-    <main className='p-8 max-w-7xl mx-auto'>
+    <main className='md:p-10 p-2 max-w-7xl mx-auto'>
       <HeroBanner onSearch={handleSearch} />
       {role === 'staff' && (
         <div className='mb-4 text-right'>

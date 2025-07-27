@@ -24,7 +24,7 @@ export default function SearchBar({
   return (
     <form
       onSubmit={handleSubmit}
-      className='w-full max-w-xl mx-auto flex gap-4'
+      className='w-full max-w-xl mx-auto flex flex-wrap gap-2 sm:gap-4 justify-center'
     >
       <label
         htmlFor='search-input'
@@ -46,11 +46,12 @@ export default function SearchBar({
           rounded-[var(--radius-lg)]
           focus:outline-none focus:ring focus:ring-[var(--color-accent)]
           transition duration-150
+          flex-[1_1_200px]
         '
       />
       <button
         type='submit'
-        className='btn-primary rounded-r-[var(--radius-lg)] mx-4'
+        className='btn-primary rounded-[var(--radius-lg)] px-6 py-3 min-w-[120px]'
       >
         Search
       </button>

@@ -7,7 +7,7 @@ export default function HeroBanner({
 }) {
   return (
     <section className='relative bg-[var(--color-primary)] text-white md:p-20 p-8 mb-8'>
-      <div className='max-w-3xl mx-auto text-center space-y-4 px-4'>
+      <div className='max-w-3xl md:mx-auto text-center space-y-4 px-4 mx-0'>
         <h1 className='md:text-4xl text-3xl font-bold'>
           Discover Your Next Event
         </h1>
