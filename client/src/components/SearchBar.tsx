@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
+import { Button } from './ui/Button';
 
 interface SearchBarProps {
   placeholder?: string;
@@ -49,12 +50,12 @@ export default function SearchBar({
           flex-[1_1_200px]
         '
       />
-      <button
+      <Button
         type='submit'
         className='btn-primary rounded-[var(--radius-lg)] px-6 py-3 min-w-[120px]'
       >
         Search
-      </button>
+      </Button>
     </form>
   );
 }

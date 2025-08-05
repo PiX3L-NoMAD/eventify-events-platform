@@ -27,10 +27,9 @@ export default function CategoryNav({
                   px-4 py-2 rounded-[var(--radius-lg)] whitespace-nowrap
                   ${
                     isActive
-                      ? 'bg-[var(--color-accent)] text-white'
+                      ? 'px-4 py-2 rounded-lg font-medium transition text-white bg-gradient-to-br from-teal-300 to-sky-500 hover:brightness-110 active:scale-95'
                       : 'bg-[var(--color-muted-light)] text-[var(--color-primary)]'
                   }
-                  focus:outline-none focus:ring
                 `}
               >
                 {cat}
