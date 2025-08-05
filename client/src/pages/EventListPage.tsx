@@ -59,6 +59,7 @@ export default function EventListPage() {
 
   function handleCategory(cat: string) {
     setCategory(cat);
+    setSearch('');
   }
 
   if (loading || queryLoading) {
